@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="ko">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18469553331"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18469553331');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>강릉현대장칼국수 부산점 | 부산 송정 장칼국수</title>
@@ -24,16 +33,25 @@
     "addressRegion": "부산광역시",
     "addressCountry": "KR"
   },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"], "opens": "10:30", "closes": "15:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"], "opens": "17:00", "closes": "24:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "08:30", "closes": "24:00"}
+  ],
+  "priceRange": "₩8,000~₩18,000",
   "hasMenu": {
     "@type": "Menu",
     "hasMenuItem": [
-      {
-        "@type": "MenuItem",
-        "name": "장칼국수",
-        "offers": {"@type": "Offer", "price": "10000", "priceCurrency": "KRW"}
-      },
-      {"@type": "MenuItem", "name": "빠작감자전"},
-      {"@type": "MenuItem", "name": "누룽지오징어순대"}
+      {"@type": "MenuItem", "name": "장칼국수", "offers": {"@type": "Offer", "price": "10000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "맑은칼국수", "offers": {"@type": "Offer", "price": "10000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "빠작감자전", "offers": {"@type": "Offer", "price": "12000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "누룽지 오징어순대", "offers": {"@type": "Offer", "price": "18000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "오징어순대", "offers": {"@type": "Offer", "price": "18000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "고기장국밥", "offers": {"@type": "Offer", "price": "13000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "고기장국밥+칼국수 추가", "offers": {"@type": "Offer", "price": "16000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "희야만두", "offers": {"@type": "Offer", "price": "8000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "빼롱만두", "offers": {"@type": "Offer", "price": "8000", "priceCurrency": "KRW"}},
+      {"@type": "MenuItem", "name": "풍자만두", "offers": {"@type": "Offer", "price": "8000", "priceCurrency": "KRW"}}
     ]
   },
   "amenityFeature": [
@@ -70,6 +88,11 @@
       "@type": "Question",
       "name": "단체나 아이 동반으로 가도 되나요?",
       "acceptedAnswer": {"@type": "Answer", "text": "단체 이용이 가능하고 유아의자가 준비되어 있습니다."}
+    },
+    {
+      "@type": "Question",
+      "name": "영업시간과 쉬는 날은 어떻게 되나요?",
+      "acceptedAnswer": {"@type": "Answer", "text": "월·화·목·금은 10:30부터 24:00까지 영업하고 15:00부터 17:00까지 브레이크타임입니다. 토·일은 08:30부터 24:00까지 영업합니다. 라스트오더는 23:30이고 매주 수요일은 쉽니다."}
     },
     {
       "@type": "Question",
@@ -128,7 +151,7 @@
   <div class="wrap">
     <div class="eyebrow">부산 송정 장칼국수</div>
     <h1>강릉현대장칼국수<span>부산점</span></h1>
-    <p class="lead">부산 해운대구 송정의 장칼국수집입니다. 칼칼한 장칼국수와 맑은 육수 칼국수, 빠작감자전, 누룽지오징어순대를 냅니다.</p>
+    <p class="lead">부산 해운대구 송정의 장칼국수집입니다. 칼칼한 장칼국수와 맑은칼국수, 빠작감자전, 누룽지 오징어순대를 냅니다.</p>
   </div>
 </header>
 
@@ -138,11 +161,16 @@
       <h2>메뉴</h2>
       <ul class="menu">
         <li>장칼국수 <span class="price">10,000원</span></li>
-        <li>맑은 칼국수 <span class="todo">정식 메뉴명·가격 확인</span></li>
-        <li>빠작감자전 <span class="todo">가격 확인</span></li>
-        <li>누룽지오징어순대 <span class="todo">가격 확인</span></li>
+        <li>맑은칼국수 <span class="price">10,000원</span></li>
+        <li>빠작감자전 <span class="price">12,000원</span></li>
+        <li>누룽지 오징어순대 <span class="price">18,000원</span></li>
+        <li>오징어순대 <span class="price">18,000원</span></li>
+        <li>고기장국밥 <span class="price">13,000원</span></li>
+        <li>고기장국밥+칼국수 추가 <span class="price">16,000원</span></li>
+        <li>희야만두 <span class="price">8,000원</span></li>
+        <li>빼롱만두 <span class="price">8,000원</span></li>
+        <li>풍자만두 <span class="price">8,000원</span></li>
       </ul>
-      <p class="note"><span class="todo">나머지 메뉴(만두, 국밥 등 총 13종)와 가격 확인</span></p>
     </div>
   </section>
 
@@ -150,8 +178,10 @@
     <div class="wrap">
       <h2>영업시간</h2>
       <table>
-        <tr><th>영업</th><td><span class="todo">오픈 시간 확인</span> ~ 라스트오더 23:30</td></tr>
-        <tr><th>휴무</th><td><span class="todo">휴무일 확인</span></td></tr>
+        <tr><th>월·화·목·금</th><td>10:30 ~ 24:00 (브레이크타임 15:00 ~ 17:00)</td></tr>
+        <tr><th>토·일</th><td>08:30 ~ 24:00</td></tr>
+        <tr><th>라스트오더</th><td>23:30</td></tr>
+        <tr><th>휴무</th><td>매주 수요일</td></tr>
       </table>
     </div>
   </section>
@@ -162,6 +192,7 @@
       <table>
         <tr><th>주소</th><td>부산광역시 해운대구 송정중앙로 46 1층</td></tr>
         <tr><th>지하철</th><td>동해선 송정역 2번 출구에서 833m</td></tr>
+        <tr><th>찾아오는 길</th><td>송정해변 끝 회전교차로에 있습니다.</td></tr>
         <tr><th>전화</th><td><a href="tel:050713766682">0507-1376-6682</a></td></tr>
         <tr><th>주차</th><td>가능</td></tr>
         <tr><th>이용 안내</th><td>포장, 배달, 단체 이용 가능. 유아의자, 무선 인터넷, 간편결제.</td></tr>
@@ -181,6 +212,8 @@
         <dd>네, 포장과 배달 모두 됩니다.</dd>
         <dt>단체나 아이 동반으로 가도 되나요?</dt>
         <dd>단체 이용이 가능하고 유아의자가 준비되어 있습니다.</dd>
+        <dt>영업시간과 쉬는 날은 어떻게 되나요?</dt>
+        <dd>월·화·목·금은 10:30부터 24:00까지 영업하고 15:00부터 17:00까지 브레이크타임입니다. 토·일은 08:30부터 24:00까지 영업합니다. 라스트오더는 23:30이고 매주 수요일은 쉽니다.</dd>
         <dt>늦은 시간에도 식사할 수 있나요?</dt>
         <dd>라스트오더는 23:30입니다.</dd>
       </dl>
